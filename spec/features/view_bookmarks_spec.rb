@@ -1,6 +1,6 @@
 feature 'View bookmark list' do
   scenario 'visiting the index page' do
-    visit ('/')
+    visit ('/') 
     expect(page).to have_content 'Bookmark manager'
   end
 
