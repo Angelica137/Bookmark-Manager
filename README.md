@@ -24,3 +24,10 @@ Run the query we have saved in the file `01_create_bookmarks_table.sql`.
 1. Connect to psql.
 2. Create the database using the psql command `CREATE DATABASE bookmark_manager_test;`.
 3. Run the query we have saved in the file `01_create_bookmarks_table.sql`.
+
+
+# User story 2
+
+As a user who hs found a valuble page
+I want to be able to save it
+so that I can access it whenever I need it
