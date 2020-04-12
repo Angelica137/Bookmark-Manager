@@ -6,9 +6,9 @@ feature 'View bookmark list' do
 
   scenario 'requesting to see the list of bookmars' do
 
-    Bookmark.create(url: "http://www.makersacademy.com")
-    Bookmark.create(url: "http://www.destroyallsoftware.com")
-    Bookmark.create(url: "http://www.google.com")
+    Bookmark.create(url: "http://www.makersacademy.com", title: 'Makers Academy')
+    Bookmark.create(url: "http://www.destroyallsoftware.com" , title: 'Destroy All Software')
+    Bookmark.create(url: "http://www.google.com" , title: 'Google')
 
     visit ('/bookmarks')
     expect(page).to have_content 'These are your bookmarks :)'
