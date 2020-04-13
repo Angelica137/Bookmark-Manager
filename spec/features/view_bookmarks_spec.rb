@@ -1,3 +1,5 @@
+require 'pg'
+
 feature 'View bookmark list' do
   scenario 'visiting the index page' do
     visit ('/') 
@@ -5,6 +7,7 @@ feature 'View bookmark list' do
   end
 
   scenario 'requesting to see the list of bookmars' do
+    connection = PG.connect(dbname: 'bookmark_manager_test')
 
     Bookmark.create(url: "http://www.makersacademy.com", title: 'Makers Academy')
     Bookmark.create(url: "http://www.destroyallsoftware.com" , title: 'Destroy All Software')
